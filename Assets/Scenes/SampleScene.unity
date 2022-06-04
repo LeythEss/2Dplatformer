@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 87821069}
   - component: {fileID: 87821068}
   - component: {fileID: 87821067}
+  - component: {fileID: 87821072}
   m_Layer: 0
   m_Name: Mace Preview (1)
   m_TagString: Untagged
@@ -626,6 +627,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0.673, y: -0.733, z: 0.506}
+--- !u!114 &87821072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87821066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0b433b383046e44a0bdcc3c503baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!1 &102010262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1078,7 @@ GameObject:
   - component: {fileID: 151517560}
   - component: {fileID: 151517559}
   - component: {fileID: 151517558}
+  - component: {fileID: 151517563}
   m_Layer: 0
   m_Name: Mace Preview (2)
   m_TagString: Untagged
@@ -1197,6 +1212,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0.673, y: -0.733, z: 0.506}
+--- !u!114 &151517563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151517557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0b433b383046e44a0bdcc3c503baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!1 &164540169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1495,7 @@ GameObject:
   - component: {fileID: 237818316}
   - component: {fileID: 237818315}
   - component: {fileID: 237818319}
+  - component: {fileID: 237818320}
   m_Layer: 0
   m_Name: Mace Preview
   m_TagString: Untagged
@@ -1600,6 +1629,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.018696021, y: -2.2779799}
   m_Size: {x: 1.6312879, y: 1.721298}
   m_Direction: 0
+--- !u!114 &237818320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237818314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0b433b383046e44a0bdcc3c503baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &249194458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2460,7 @@ GameObject:
   - component: {fileID: 470255648}
   - component: {fileID: 470255647}
   - component: {fileID: 470255651}
+  - component: {fileID: 470255652}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Untagged
@@ -2551,6 +2594,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 2.56, y: 2.56}
   m_Direction: 0
+--- !u!114 &470255652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470255646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0b433b383046e44a0bdcc3c503baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!1 &502361138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +3982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  damage: 0
 --- !u!61 &850017830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4669,6 +4726,7 @@ GameObject:
   - component: {fileID: 992376610}
   - component: {fileID: 992376609}
   - component: {fileID: 992376613}
+  - component: {fileID: 992376614}
   m_Layer: 0
   m_Name: Saw (1)
   m_TagString: Untagged
@@ -4802,6 +4860,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 2.56, y: 2.56}
   m_Direction: 0
+--- !u!114 &992376614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992376608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0b433b383046e44a0bdcc3c503baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!1 &1003243017
 GameObject:
   m_ObjectHideFlags: 0
@@ -5108,6 +5179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  damage: 0
 --- !u!61 &1041864363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5706,6 +5778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  damage: 0
 --- !u!61 &1138041879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8894,6 +8967,7 @@ GameObject:
   - component: {fileID: 1795213812}
   - component: {fileID: 1795213811}
   - component: {fileID: 1795213815}
+  - component: {fileID: 1795213816}
   m_Layer: 0
   m_Name: Saw (2)
   m_TagString: Untagged
@@ -9027,6 +9101,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 2.56, y: 2.56}
   m_Direction: 0
+--- !u!114 &1795213816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795213810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0b433b383046e44a0bdcc3c503baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!1 &1858134093
 GameObject:
   m_ObjectHideFlags: 0
@@ -9344,6 +9431,7 @@ GameObject:
   - component: {fileID: 1925785315}
   - component: {fileID: 1925785314}
   - component: {fileID: 1925785313}
+  - component: {fileID: 1925785318}
   m_Layer: 0
   m_Name: Saw (4)
   m_TagString: Untagged
@@ -9477,6 +9565,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925785318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925785312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0b433b383046e44a0bdcc3c503baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!1 &1945731128
 GameObject:
   m_ObjectHideFlags: 0
@@ -9711,6 +9812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  damage: 0
 --- !u!50 &1955847201
 Rigidbody2D:
   serializedVersion: 4
@@ -10155,6 +10257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  damage: 0
 --- !u!61 &2061726928
 BoxCollider2D:
   m_ObjectHideFlags: 0
