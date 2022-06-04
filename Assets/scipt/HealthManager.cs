@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class HealthManager : MonoBehaviour
 {
     const float MaxHealth = 100f;
     float health;
+    public Slider healthSlider;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +20,11 @@ public class HealthManager : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-    }
+  
     void Die()
     {
         GetComponent<playermovment>().enabled = false;
+        GetComponentInChildren<Animator>().SetBool("isdead", true);
     }
     public void TakeDamage(float amount)
     {
@@ -34,5 +35,7 @@ public class HealthManager : MonoBehaviour
             health = 0;
             Die();
         }
+        healthSlider. = health / MaxHealth;
     }
+    
 }
