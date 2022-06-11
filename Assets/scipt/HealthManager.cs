@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     const float MaxHealth = 100f;
+    [SerializeField]
     float health;
     public Slider healthSlider;
     // Start is called before the first frame update
@@ -35,7 +36,20 @@ public class HealthManager : MonoBehaviour
             health = 0;
             Die();
         }
-        healthSlider. = health / MaxHealth;
+        healthSlider.value= health / MaxHealth;
+    }
+    public void Heal(float amount)
+    {
+        if(health < MaxHealth && health + amount <= MaxHealth)
+        {
+            health += amount;
+        }
+        else
+        {
+            health = MaxHealth;
+        }
+       
+        healthSlider.value = health / MaxHealth;
     }
     
 }
