@@ -36,7 +36,7 @@ public class HealthManager : MonoBehaviour
             health = 0;
             Die();
         }
-        healthSlider.value= health / MaxHealth;
+        healthSlider.value= health /MaxHealth;
     }
     public void Heal(float amount)
     {
