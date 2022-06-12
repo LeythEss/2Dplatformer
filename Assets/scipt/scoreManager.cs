@@ -23,4 +23,11 @@ public class scoreManager : MonoBehaviour
             scoretxt.text = score.ToString();
         }
     }
+    private void Update()
+    {
+        if (score> PlayerPrefs.GetInt("highscore"))
+        {
+            PlayerPrefs.SetInt("highscore", score);
+        }
+    }
 }
