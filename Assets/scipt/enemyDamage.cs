@@ -13,6 +13,7 @@ public class enemyDamage : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<HealthManager>().TakeDamage(damage);
+            
             if (push)
             {
                 Vector2 pushDirection = collision.transform.position - transform.position;

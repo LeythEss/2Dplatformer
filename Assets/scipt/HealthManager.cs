@@ -37,6 +37,7 @@ public class HealthManager : MonoBehaviour
             Die();
         }
         healthSlider.value= health /MaxHealth;
+        GetComponent<AudioSource>().Play();
     }
     public void Heal(float amount)
     {

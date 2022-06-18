@@ -27,7 +27,8 @@ public class enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
             collision.gameObject.GetComponent<HealthManager>().TakeDamage(damage);
-       
+        
+
     }
 
     
