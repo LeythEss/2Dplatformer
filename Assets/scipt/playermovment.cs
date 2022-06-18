@@ -13,6 +13,8 @@ public class playermovment : MonoBehaviour
     bool grounded;
     public Collider2D groundCheck;
     public LayerMask groundLayer;
+    bool isrunning = false;
+    int numberOfJump = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,16 @@ public class playermovment : MonoBehaviour
         anim.SetBool("jumping", !grounded);
         Vector2 targetVelocity = new Vector2(x * speed, rb2d.velocity.y);
         rb2d.velocity = Vector2.SmoothDamp(rb2d.velocity, targetVelocity, ref targetVelocity, Time.deltaTime * smooth);
+        if (Input.GetKeyDown(KeyCode.LeftShift) && isrunning == false)
+        {
+            speed = speed * 2f;
+            isrunning = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift)&& isrunning == true)
+        {
+            speed = speed / 2f;
+            isrunning = false;
+        }
         if (x > 0 && !facingRight)
         {
             // ... flip the player.
@@ -50,8 +62,17 @@ public class playermovment : MonoBehaviour
 
         // Only jump if the player is grounded and has pressed the Space bar
 
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && (grounded || numberOfJump > 1))
+        {
             rb2d.AddForce(new Vector2(0f, jumpForce));
+            numberOfJump--;
+            
+            
+        }
+        if (grounded)
+            numberOfJump = 2;
+            
+
     }
 
     void Flip()
@@ -65,5 +86,21 @@ public class playermovment : MonoBehaviour
         scale.x *= -1;
 
         transform.localScale = scale;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "star")
+        {
+            Destroy(collision.gameObject);
+            gameObject.tag = "powerup";
+            gameObject.GetComponentInChildren<SpriteRenderer>().material.color = Color.yellow;
+            StartCoroutine("reset");
+        }
+    }
+    IEnumerator reset()
+    {
+        yield return new WaitForSeconds(5f);
+        gameObject.tag = "Player";
+        gameObject.GetComponentInChildren<SpriteRenderer>().material.color = Color.white;
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - ground
   - enemy
   - HiddenCoin
+  - star
+  - powerup
   layers:
   - Default
   - TransparentFX
